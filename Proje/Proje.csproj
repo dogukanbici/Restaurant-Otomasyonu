@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC33DF83-654A-43B3-A3BD-974DDEBE7E85}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proje</RootNamespace>
+    <AssemblyName>Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesap.cs" />
+    <Compile Include="Kasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasalar.Designer.cs">
+      <DependentUpon>Kasalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrol.cs" />
+    <Compile Include="Masalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masalar.Designer.cs">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayarlar.Designer.cs">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mutfak.Designer.cs">
+      <DependentUpon>Mutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pinpad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pinpad.Designer.cs">
+      <DependentUpon>pinpad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor.Designer.cs">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis.Designer.cs">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urun.cs" />
+    <Compile Include="VeritabaniBaglanti.cs" />
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasalar.resx">
+      <DependentUpon>Kasalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masalar.resx">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayarlar.resx">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mutfak.resx">
+      <DependentUpon>Mutfak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pinpad.resx">
+      <DependentUpon>pinpad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor.resx">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparis.resx">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resimler\010_trash-2-512.png" />
+    <Content Include="Resimler\012_refresh-512.png" />
+    <Content Include="Resimler\512x512.png" />
+    <Content Include="Resimler\9.png" />
+    <Content Include="Resimler\add-icon--icon-search-engine-1.png" />
+    <Content Include="Resimler\Bos.jpeg" />
+    <Content Include="Resimler\colddrink-icon.png" />
+    <Content Include="Resimler\dolu.jpeg" />
+    <Content Include="Resimler\images %281%29.jpg" />
+    <Content Include="Resimler\images %281%29.png" />
+    <Content Include="Resimler\images %282%29.jpg" />
+    <Content Include="Resimler\images.jpg" />
+    <Content Include="Resimler\images.png" />
+    <Content Include="Resimler\kisspng-bacon-egg-and-cheese-sandwich-breakfast-fried-egg-breakfast-5abba25ed28848.4672178615222462388624.jpg" />
+    <Content Include="Resimler\Rezerve.jpeg" />
+    <Content Include="Resimler\Sweets-11-512.png" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.35.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.36 %281%29.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.36 %282%29.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.36.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.37 %281%29.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.37 %282%29.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.37 %283%29.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.37.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.38 %281%29.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.38 %282%29.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.38.jpeg" />
+    <Content Include="Resimler\WhatsApp Image 2018-12-25 at 18.14.39.jpeg" />
+    <Content Include="Resources\Bos.jpeg" />
+    <Content Include="Resimler\Button-Close-icon.png" />
+    <Content Include="Resimler\Check-2-icon.png" />
+    <Content Include="Resimler\Close-icon.png" />
+    <Content Include="Resources\dolu.jpeg" />
+    <Content Include="Resimler\Letter-O-icon.png" />
+    <Content Include="Resimler\Math-lower-than-icon %282%29.png" />
+    <Content Include="Resimler\Number-1-icon %281%29.png" />
+    <Content Include="Resimler\Number-2-icon.png" />
+    <Content Include="Resimler\Number-3-icon.png" />
+    <Content Include="Resimler\Number-4-icon.png" />
+    <Content Include="Resimler\Number-5-icon.png" />
+    <Content Include="Resimler\Number-6-icon.png" />
+    <Content Include="Resimler\Number-7-icon.png" />
+    <Content Include="Resimler\Number-8-icon.png" />
+    <Content Include="Resimler\Number-9-icon.png" />
+    <Content Include="Resources\Rezerve.jpeg" />
+    <None Include="Resimler\Giriş" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
